@@ -19,12 +19,10 @@ const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString(
 function getCss(theme: string, fontSize: string) {
   let background = "white";
   let foreground = "black";
-  let radial = "lightgray";
 
   if (theme === "dark") {
     background = "#191919";
     foreground = "#d1d1d1";
-    radial = "dimgray";
   }
   return `
   @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
